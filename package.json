@@ -1,0 +1,30 @@
+{
+    "name" : "fritzboxtools",
+    "version" : "0.1",
+    "description" : "tools for fritzbox http interface via nodejs",
+    "main" : "lib/frizboxtools.js",
+    "repository" : {
+        "type" : "git",
+        "url" : "http://github.com/selamanse/fritzboxtools.git"
+    },
+    "keywords" : [
+        "fritzbox",
+        "nodejs",
+        "http",
+        "sessionid"
+    ],
+    "author" : {
+        "name" : "Selamanse",
+        "email" : "selamanse@users.noreply.github.com"
+    },
+    "dependencies": {
+    "xml2js": ">= 0.4.1",
+    "MD5": ">= 1.2.0"
+    },
+    "devDependencies": {},
+  	"optionalDependencies": {},
+    "license" : "MIT/X11",
+    "engines" : {
+        "node" : ">=0.10"
+    }
+}
