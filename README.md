@@ -19,3 +19,4 @@ currently depends on following node modules:
 - util (included in nodejs)
 - xml2js
 - MD5
+- optimist (only for examples)
