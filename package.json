@@ -1,8 +1,8 @@
 {
     "name" : "fritzboxtools",
-    "version" : "0.2.2",
+    "version" : "0.2.3",
     "description" : "tools for fritzbox http interface via nodejs",
-    "main" : "lib/frizboxtools.js",
+    "main" : "lib/index",
     "repository" : {
         "type" : "git",
         "url" : "http://github.com/selamanse/fritzboxtools.git"
