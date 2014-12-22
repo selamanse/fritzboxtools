@@ -2,7 +2,16 @@ fritzboxtools
 =============
 
 this is a module for nodejs.
+It can get Smart Home Data from your fritz!Box, turn on and off Fritz!DECT 200 Outlets.
+ 
 currently developed and only tested on mac osx maverics.
+depends on following node modules:
+
+- http (included in nodejs)
+- util (included in nodejs)
+- xml2js
+- MD5
+- optimist (only for examples)
 
 This tool is currently in progress of development.
 
@@ -11,12 +20,6 @@ the http interface action for avm-products described in this document:
 
 http://www.avm.de/de/Extern/files/session_id/AVM_Technical_Note_-_Session_ID.pdf
 
-STATE: CLUMSY...use at own risk...
+STATE: INTEGRATABLE BUT STILL PREALPHA...use at own risk...
 
-currently depends on following node modules:
-
-- http (included in nodejs)
-- util (included in nodejs)
-- xml2js
-- MD5
-- optimist (only for examples)
+Example: At the moment I use it to collect temperature Data from Fritz!DECT 200 outlets. Look further into metrics.js example.
