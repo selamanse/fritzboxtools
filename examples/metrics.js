@@ -1,4 +1,5 @@
 var fritzboxtools = require('../lib/fritzboxtools');
+var util = require('util')
 var argv = require('optimist')
 			.usage('Usage: $0 --fboxuri [string] --user [string] --pass [string]')
     		.demand(['user', 'pass'])
@@ -6,8 +7,8 @@ var argv = require('optimist')
     		.argv;
 
 
-var fbox = new fritzboxtools(argv.user, argv.pass, argv.fboxuri);
+var fbox = new fritzboxtools(argv.fboxuri);
 
-fbox.login(function(){
+fbox.login(argv.user, argv.pass, function(){
 	fbox.getData();
 });
