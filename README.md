@@ -1,5 +1,6 @@
-fritzboxtools
-=============
+# fritzboxtools
+
+[![NPM version](https://img.shields.io/npm/v/fritzboxtools.svg?style=flat)](https://www.npmjs.com/package/fritzboxtools)
 
 this is a module for nodejs.
 It can get Smart Home Data from your fritz!Box, turn on and off Fritz!DECT 200 Outlets.
@@ -25,4 +26,24 @@ http://www.avm.de/de/Extern/files/session_id/AVM_Technical_Note_-_Session_ID.pdf
 
 STATE: INTEGRATABLE BUT STILL PREALPHA...use at own risk...
 
-Example: At the moment I use it to collect temperature Data from Fritz!DECT 200 outlets. Look further into metrics.js example.
+## Example usage
+
+Simple request to print JSONdata from all connected outlets every 3 seconds to stdout.
+This Command requires only "HomeAuto" privileges for the user (BoxAdmin has all rights).
+
+
+
+    var fritzboxtools = require('fritzboxtools');
+    
+    var fbox = new fritzboxtools("fritz.box");
+    
+    fbox.login("username", "password", function(){
+        	fbox.getData(function(d){
+    		
+    		  //d is 
+    		  console.log(d);
+    		
+    	    }, 3000);
+    });
+    
+
