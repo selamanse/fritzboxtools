@@ -1,5 +1,5 @@
 var fritzboxtools = require('../lib/fritzboxtools');
-var argv = require('optimist')
+var argv = require('yargs')
 			.usage('Usage: $0 --fboxuri [string] --user [string] --pass [string] --deviceID [num] --state [0|1]')
     		.demand(['user', 'pass', 'deviceID'])
     		.default('fboxuri', 'fritz.box')

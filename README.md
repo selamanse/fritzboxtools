@@ -14,7 +14,7 @@ depends on following node modules:
 - util (included in nodejs)
 - xml2js
 - MD5
-- optimist (only for examples and restproxy)
+- yargs (only for examples and restproxy)
 - express (only for restproxy)
 
 These tools are currently in progress of development but can be used for developing apps on top of it.
