@@ -22,7 +22,7 @@ These tools are currently in progress of development but can be used for develop
 fritzboxtools.js represents a working reimplementation of the session-id based example of 
 the http interface action for avm-products described in this document:
 
-http://www.avm.de/de/Extern/files/session_id/AVM_Technical_Note_-_Session_ID.pdf
+http://avm.de/fileadmin/user_upload/Global/Service/Schnittstellen/AVM_Technical_Note_-_Session_ID.pdf
 
 STATE: INTEGRATABLE BUT STILL PREALPHA...use at own risk...
 
