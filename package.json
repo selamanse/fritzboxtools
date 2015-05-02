@@ -17,7 +17,7 @@
     ],
     "author" : {
         "name" : "Selamanse",
-        "email" : "selamanse@users.noreply.github.com"
+        "email" : "selamanse@scheinfrei.info"
     },
     "dependencies": {
     	"xml2js": ">= 0.4.1",
