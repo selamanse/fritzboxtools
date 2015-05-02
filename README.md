@@ -11,6 +11,7 @@ currently tested as metrics collecting application running on Arch Linux ARM (on
 depends on following node modules:
 
 - http (included in nodejs)
+- https (included in nodejs)
 - util (included in nodejs)
 - xml2js
 - MD5
