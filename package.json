@@ -25,7 +25,9 @@
     	"yargs": ">= 2.3.0",
     	"express": ">= 4.11.1"
     },
-    "devDependencies": {},
+    "devDependencies": {
+    	"mocha": "2.2.4"
+    },
   	"optionalDependencies": {},
     "license" : "MIT/X11",
     "engines" : {
