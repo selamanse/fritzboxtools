@@ -19,18 +19,20 @@ depends on following node modules:
 
 These tools are currently in progress of development but can be used for developing apps on top of it.
 
-fritzboxtools.js represents a working reimplementation of the session-id based example of 
-the http interface action for avm-products described in this document:
+fritzboxtools.js represents a working reimplementation of the [session-id](http://avm.de/fileadmin/user_upload/Global/Service/Schnittstellen/AVM_Technical_Note_-_Session_ID.pdf) based example of 
+the http interface action for avm-products.
 
-http://avm.de/fileadmin/user_upload/Global/Service/Schnittstellen/AVM_Technical_Note_-_Session_ID.pdf
+Since Version 0.3.3 fritboxtools also supports [AHA-HTTP-Interface](http://avm.de/fileadmin/user_upload/Global/Service/Schnittstellen/AHA-HTTP-Interface.pdf) methods.
 
-STATE: INTEGRATABLE BUT STILL PREALPHA...use at own risk...
+STATE: USABLE, GENERIC AND FUNCTIONAL ALMOST COMPLETE (ALPHA).
 
 ## Example usage
 
-Simple request to print JSONdata from all connected outlets every 3 seconds to stdout.
-This Command requires only "HomeAuto" privileges for the user (BoxAdmin has all rights).
+These commands require only "HomeAuto" privileges for the user (BoxAdmin has all rights).
 
+### Full Device Data
+
+Simple request to print JSONdata from all connected outlets every 3 seconds to stdout.
 
 
     var fritzboxtools = require('fritzboxtools');
@@ -38,12 +40,25 @@ This Command requires only "HomeAuto" privileges for the user (BoxAdmin has all 
     var fbox = new fritzboxtools("fritz.box");
     
     fbox.login("username", "password", function(){
+        	
         	fbox.getData(function(d){
     		
-    		  //d is 
     		  console.log(d);
     		
     	    }, 3000);
+    	    
     });
     
+### AIN List
 
+Request to print comma separated AINs from all connected outlets to stdout.
+	
+	fbox.login("username", "password", function(){
+	
+			fbox.homeautoSwitch("", "getswitchlist", function(d){
+		
+				console.log(d);
+		
+			});
+	
+	});

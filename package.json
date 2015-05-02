@@ -1,6 +1,6 @@
 {
     "name" : "fritzboxtools",
-    "version" : "0.3.2",
+    "version" : "0.3.3",
     "description" : "tools for fritzbox http interface via nodejs",
     "main" : "lib/index",
     "repository" : {
